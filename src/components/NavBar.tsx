@@ -11,11 +11,11 @@ import React, { useState } from 'react'
 
 function NavBar() {
     const { user, logOut } = UserAuth();
+    const [DD, setDD] = useState(false);
 
     const router = useRouter();
 
     useAuthentication();
-    const [DD, setDD] = useState(false);
 
     const handleSignOut = async () => {
         try {
