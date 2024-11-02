@@ -1,0 +1,144 @@
+
+
+.landing-page {
+
+    @layer base {
+      body {
+        @apply bg-gray-950 text-white;
+        background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.15), transparent 60%),
+          radial-gradient(circle at 100% 0%, rgba(99, 102, 241, 0.15), transparent 40%);
+      }
+    }
+  
+    .glass {
+      @apply backdrop-blur-lg bg-white/5 border border-white/10;
+    }
+  
+    .glow {
+      box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+    }
+  
+    .glow-purple {
+      box-shadow: 0 0 30px -6px rgba(79, 70, 229, 0.3);
+    }
+  
+    @keyframes float {
+  
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+  
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  
+    @keyframes float-delayed {
+  
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+  
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  
+    @keyframes pulse-glow {
+  
+      0%,
+      100% {
+        box-shadow: 0 0 30px -6px rgba(79, 70, 229, 0.3);
+      }
+  
+      50% {
+        box-shadow: 0 0 50px -6px rgba(99, 102, 241, 0.5);
+      }
+    }
+  
+    @keyframes slide-up {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+  
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes scale-in {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+  
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes gradient-shift {
+      0% {
+        background-position: 0% 50%;
+      }
+  
+      50% {
+        background-position: 100% 50%;
+      }
+  
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+  
+    .animate-float-delayed {
+      animation: float-delayed 8s ease-in-out infinite;
+    }
+  
+    .animate-pulse-glow {
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+  
+    .animate-slide-up {
+      animation: slide-up 0.6s ease-out forwards;
+    }
+  
+    .animate-scale-in {
+      animation: scale-in 0.5s ease-out forwards;
+    }
+  
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradient-shift 8s ease infinite;
+    }
+  
+    .stagger>* {
+      opacity: 0;
+      animation: slide-up 0.5s ease-out forwards;
+    }
+  
+    .stagger>*:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+  
+    .stagger>*:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+  
+    .stagger>*:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+  
+    ::selection {
+      @apply bg-indigo-900 text-white;
+    }
+  }

@@ -1,0 +1,3 @@
+User-agent: ia_archiver
+
+Sitemap: https://www.example.com/sitemap.xml
