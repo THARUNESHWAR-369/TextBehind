@@ -48,6 +48,7 @@ export function Hero() {
         <a className='w-fit flex justify-center m-auto mb-5' href="https://www.producthunt.com/posts/textbehind?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-textbehind" target="_blank">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=569325&theme=dark" alt="TextBehind - TextBehind&#0058;&#0032;Create&#0032;images&#0032;with&#0032;text&#0032;behind&#0032;objects&#0033; | Product Hunt" style={{ width: '250px', height: '54px' }} width={"250"} height={"54"} />
         </a>
+        
 
         <div className="max-w-4xl mx-auto">
           <div className={`min-[600px]:glass rounded-2xl p-8 relative overflow-hidden`}>
