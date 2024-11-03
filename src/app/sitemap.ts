@@ -12,7 +12,7 @@ type changeFrequency =
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const changeFrequency: changeFrequency = "daily";
-  const routes = ["", "/login", "/app"].map((route) => ({
+  const routes = ["", "login", "app"].map((route) => ({
     url: `${NEXT_PUBLIC_URL}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency,
