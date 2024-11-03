@@ -18,6 +18,8 @@ import * as htmlToImage from 'html-to-image';
 import TextSet from "./TextSet";
 import { MarkerManagement } from "./Markers";
 import { MarkersInterface, TextSetItem } from "@/lib/types/types";
+import Feedback from "../landingpage/FeedBack";
+import { Footer } from "../landingpage/Footer";
 
 export default function DashboardPage() {
   const [imageIsOpen, setImageIsOpen] = React.useState(true);
@@ -303,6 +305,8 @@ export default function DashboardPage() {
               handleSaveImage={handleSaveImage}
             />
           </div>
+        <Feedback  />
+        <Footer/>
         </div >
       </div >
     </>

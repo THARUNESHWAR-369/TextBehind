@@ -4,6 +4,7 @@ import { Footer } from './Footer'
 import { Gallery } from './Gallery'
 import { Features } from './Features'
 import { Hero } from './Hero'
+import Feedback from './FeedBack'
 
 function LandingPage() {
   return (
@@ -12,6 +13,7 @@ function LandingPage() {
       <Features />
       <Gallery />
       <CTA />
+      <Feedback />
       <Footer />
     </div>
   )
